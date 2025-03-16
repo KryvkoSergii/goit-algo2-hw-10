@@ -54,3 +54,31 @@ The execution time grows linearly (almost 𝑂(𝑛log(𝑛))), which is expecte
 Randomized QuickSort avoids the worst case (when the support element is chosen poorly) due to random selection.
 Deterministic QuickSort (the classic implementation) can perform similarly well if the data is already well shuffled.
 So, although the difference is small, Randomized QuickSort is usually slightly more efficient due to the lower probability of falling into the worst case 𝑂(𝑛^2).
+
+## Task 2. Scheduling classes using a greedy algorithm
+
+Implement a program for scheduling classes at a university using a greedy algorithm for the set coverage problem. The goal is to assign teachers to subjects in such a way as to minimize the number of teachers and cover all subjects.
+
+### Prerequisites 
+```bash
+poetry install
+poetry shell
+```
+
+### To run
+```bash
+poetry run .\app\task2.py
+```
+
+### Result
+```bash
+Class schedule:
+Наталія Шевченко, 29 years, email: n.shevchenko@example.com
+ Teaches subjects: Хімія, Біологія
+
+Сергій Коваленко, 50 years, email: s.kovalenko@example.com
+ Teaches subjects: Інформатика
+
+Олександр Іваненко, 45 years, email: o.ivanenko@example.com
+ Teaches subjects: Математика, Фізика
+```
